@@ -258,7 +258,7 @@ startGame = async (loadSavedState = true) => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
@@ -333,13 +333,18 @@ function decodeHtml() {
     txt.innerHTML = currentQuestion.question;
     return txt.value;
 }
+function decodeChoice(){
+    var txt = document.createElement("textarea");
+    txt.innerHTML = currentQuestion["choice" + number];
+    return txt.value;
+}
 const renderQuestion = () => {
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
     question.innerText =decodeHtml() ;
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion["choice" + number];
+        choice.innerText =decodeChoice();
     });
     acceptingAnswers = true;
 };
