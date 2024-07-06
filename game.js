@@ -333,9 +333,9 @@ function decodeHtml() {
     txt.innerHTML = currentQuestion.question;
     return txt.value;
 }
-function decodeChoice(){
+function decodeChoice(choice){
     var txt = document.createElement("textarea");
-    txt.innerHTML = currentQuestion["choice" + number];
+    txt.innerHTML = choice ;
     return txt.value;
 }
 const renderQuestion = () => {
@@ -344,7 +344,7 @@ const renderQuestion = () => {
     question.innerText =decodeHtml() ;
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innerText =decodeChoice();
+        choice.innerText =decodeChoice(currentQuestion["choice" + number]);
     });
     acceptingAnswers = true;
 };
