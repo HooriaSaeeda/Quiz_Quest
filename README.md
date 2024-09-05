@@ -23,19 +23,19 @@ Create a trivia quiz game where users answer questions, track their scores, and 
 - A high scores page to display the top scores.
 
 ### Screenshot
-# Quiz_Quest: **Home screen**
+- Quiz_Quest: **Home screen**
 ![](./readme_screenshots/Quiz_Quest_home.png)
 
-# Quiz_Quest: **Game screen**
+- Quiz_Quest: **Game screen**
 ![](./readme_screenshots/Quiz_Quest_game_screen.png)
 
-# Quiz_Quest: **Pause screen**
+- Quiz_Quest: **Pause screen**
 ![](./readme_screenshots/Quiz_Quest_game_pause.png)
 
-# Quiz_Quest: **End screen**
+- Quiz_Quest: **End screen**
 ![](./readme_screenshots/Quiz_Quest_end_screen.png)
 
-# Quiz_Quest: **HighScore screen**
+- Quiz_Quest: **HighScore screen**
 ![](./readme_screenshots/Quiz_Quest_highScore.png)
 
 ### Links
@@ -69,7 +69,7 @@ Create a trivia quiz game where users answer questions, track their scores, and 
 
 ## Author
 
- **GitHub**: [https://github.com/hoor23e](https://github.com/hoor23) 
+- **GitHub**: [https://github.com/hoor23e](https://github.com/hoor23) 
 - **Email**: [hoorseyda14@gmail.com](hoorseyda14@gmail.com)
 
 ## Acknowledgments
